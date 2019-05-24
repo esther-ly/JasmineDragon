@@ -1,10 +1,13 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Tajawal&display=swap');
 body {
-  background-color: #F7FFDD;
+  background-color: #F5F1ED;
+  font-family: Tajawal;
+  color: white;
 }
-
+.main {
+  padding-top: 90px;
+}
 
 /* Header */
 
@@ -20,8 +23,7 @@ header {
   font-family: 'Josefin Slab';
   font-size: 25px;
   font-weight: bold;
-  background-color: #D0E3CC;
-
+  background-color: #DBA159;
 }
 
 .logo {
@@ -36,19 +38,55 @@ header {
   height: 80px;
   padding-right: 30px;
 }
-
-a {
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: lighter;
-  color: black;
-}
-
-
 nav {
   margin-right: 50px;
 }
 nav span {
   padding: 10px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/*Mission Section*/
+
+#mission {
+  background-image: url(../images/mission-background.jpg);
+  height: 700px;
+  padding-top: 70px;
+}
+
+#mission .content {
+  background-color: #BC584D;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+/*Totom Section*/
+
+/*Locations Section*/
+#locations {
+  background-image: url(../images/locations-background.jpg);
+  height: 500px;
+  padding-top: 70px;
+}
+#locations .flex-container {
+  margin: auto;
+  width: 1100px;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
